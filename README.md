@@ -10,7 +10,7 @@ https://github.com/P3TERX/GeoLite.mmdb?tab=readme-ov-file
 В данном GIT репозитории ссылки на базы данных geo ip по ASN - провайдеров, городам и странам. Для блокировки доступа к сайту по странам, берем ссылку на данную базу:  GeoLite2-Country.mmdb.
 
 
-# Установка необходимых пакетов (Debian/Ubuntu)
+## Установка необходимых пакетов (Debian/Ubuntu)
 ```
 sudo apt-get update
 sudo apt-get install -y libnginx-mod-http-geoip2 libnginx-mod-http-geoip geoipupdate
@@ -23,7 +23,7 @@ sudo nginx -V
 В списке vjlektq должно быть значение: --with-http_geoip_module, если нет - пересобираем
 
 
-# Создаем директорию для базы данных и скачиваем mmdb базу данных в неё 
+## Создаем директорию для базы данных и скачиваем mmdb базу данных в неё 
 ```
 sudo mkdir /usr/share/GeoIP
 ```	
@@ -32,7 +32,7 @@ sudo mkdir /usr/share/GeoIP
 cd /usr/share/GeoIP && sudo wget  https://git.io/GeoLite2-Country.mmdb
 ```
 
-# Приступаем к конфигурации nginx
+## Приступаем к конфигурации nginx
 
 Вносим изменения в следующие конфигурационные файлы Nginx (примеры в репозитории):
  1. nginx.conf (файл конфигурации NGINX)
@@ -57,7 +57,7 @@ sudo systemctl reload nginx
 ```
 
 
-# Добавляем скрипт autoupdate_db.sh в cron раз в неделю
+## Добавляем скрипт autoupdate_db.sh в cron раз в неделю
 Создать директорию scripts и исполняемый autoupdate_db.sh - фаил для запуска получения обнолений GeoIP базы данных.
 
 Создаем директорию:
