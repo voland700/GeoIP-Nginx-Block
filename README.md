@@ -57,7 +57,7 @@ sudo systemctl reload nginx
 ```
 
 
-## Добавляем скрипт autoupdate_db.sh в cron раз в неделю
+## Добавляем скрипт autoupdate_db.sh в cron для зауска раз в неделю
 Создать директорию scripts и исполняемый autoupdate_db.sh - фаил для запуска получения обнолений GeoIP базы данных.
 
 Создаем директорию:
