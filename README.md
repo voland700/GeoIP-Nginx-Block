@@ -68,7 +68,7 @@ sudo mkdir /srv/scripts
 ```
 sudo touch /srv/scripts/autoupdate_db.sh
 ```
-Открыть файл в редакторе и внести изменения, выйти с сохраненеим (Ctrl + X, подтвердить Y)
+Открыть файл в редакторе и внести изменения (аналогичный файл в репозитории), выйти с сохраненеим (Ctrl + X, подтвердить Y)
 ```
 sudo nano /srv/scripts/autoupdate_db.sh
 ```
