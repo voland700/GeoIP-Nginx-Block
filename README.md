@@ -27,7 +27,7 @@ sudo nginx -V
 ```
 sudo mkdir /usr/share/GeoIP
 ```	
-Переходим в дерикторию и скачиваем базу данных
+Переходим в созданную дерикторию и скачиваем базу данных
 ```
 cd /usr/share/GeoIP && sudo wget  https://git.io/GeoLite2-Country.mmdb
 ```
